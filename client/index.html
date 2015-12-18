@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home | Books</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style/reset.css">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <style type="text/css"> </style>
+
+
+  </head>
+  <body>
+    <header>
+      <h1><img id="menuButton" src="../icons/ic_menu_24px.svg" />My Books</h1>
+      <nav id="nav">
+        <ul class="hide" id="books">
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div id="app">
+        <div id="wrapper">
+          <div id="welcome" class="card">
+            <div class="cardTop">
+              <h2 class="welcomeMessage">Welcome back!</h2>
+              <h3 class="prompt"><span>It's been a while.</span><span>Read any new books lately?</span></h3>
+            </div>
+            <div class="cardActions">
+              <input type="button" value="NO" id="noButton" class="secondary actionButton"/>
+              <input type="button" value="YES" id="yesButton" class="primary actionButton"/>
+              <form id="inputForm">
+                <label>Title:</label><input type="text" name="title" class="dataForm" />
+                <label>Author:</label><input type="text" name="author" class="dataForm" />
+                <button type="submit" class="primary actionButton">SUBMIT</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+        <div id="right">
+          <div class="card">
+            <div class="cardBigImage">
+            </div>
+            <div class="contentBigImage">
+              <div class="cardTop">
+                <h4 class="author">Number 10</h4>
+                <h6 class="title">Whitehaven Beach Whitsunday Island, Whitsundays Island</h6>
+              </div>
+              <div class="cardActions">
+                <input type="button" value="SHARE" class="secondary actionButton">
+                <input type="button" value="EXPLORE" class="primary actionButton">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="mask">
+    </div>
+    <script type="text/javascript" src="./app.js"></script>
+    <script type="text/javascript" src="./components/card.js"></script>
+  </body>
+
+</html>
